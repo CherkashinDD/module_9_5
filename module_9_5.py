@@ -5,7 +5,7 @@ class Iterator:
 
     def __init__(self, start, stop, step=1):
         self.start = start
-        self.stop = stop
+        self.stop = stop + step
         self.step = step
         if step == 0:
             raise StepValueError('Шаг не может быть равен 0')
